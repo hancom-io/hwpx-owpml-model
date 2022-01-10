@@ -1,0 +1,1991 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Zip">
+      <UniqueIdentifier>{74786cf7-f1d5-4fde-8303-b551fcd41faa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Expat">
+      <UniqueIdentifier>{c258810c-7dc5-4c4b-aaf3-e79f5139bcf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class">
+      <UniqueIdentifier>{b9cf9f46-1a15-43d1-89c3-0ac89125310a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\Core">
+      <UniqueIdentifier>{156f694c-7298-470b-8459-17c375a2818c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\Para">
+      <UniqueIdentifier>{58798c0e-eb03-4186-b30a-ba8520b62a1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\Head">
+      <UniqueIdentifier>{c8b5e729-0223-495c-a11d-b0054fab4abd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\Etc">
+      <UniqueIdentifier>{22f16089-bfca-4180-8824-3ae8d183053e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{28d23e1d-2872-41ea-9929-010b853c8667}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Document.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\NamespacePrefix.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Zip\SDZip.cpp">
+      <Filter>Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="Zip\unzip.cpp">
+      <Filter>Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="Zip\zip.cpp">
+      <Filter>Zip</Filter>
+    </ClCompile>
+    <ClCompile Include="Expat\xmlparse.cpp">
+      <Filter>Expat</Filter>
+    </ClCompile>
+    <ClCompile Include="Expat\xmlrole.cpp">
+      <Filter>Expat</Filter>
+    </ClCompile>
+    <ClCompile Include="Expat\xmltok.cpp">
+      <Filter>Expat</Filter>
+    </ClCompile>
+    <ClCompile Include="Expat\xmltok_impl.cpp">
+      <Filter>Expat</Filter>
+    </ClCompile>
+    <ClCompile Include="Expat\xmltok_ns.cpp">
+      <Filter>Expat</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Core\color.cpp">
+      <Filter>Class\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Core\FillBrushType.cpp">
+      <Filter>Class\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Core\gradation.cpp">
+      <Filter>Class\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Core\HWPValue.cpp">
+      <Filter>Class\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Core\ImageType.cpp">
+      <Filter>Class\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Core\imgBrush.cpp">
+      <Filter>Class\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Core\marginAtt.cpp">
+      <Filter>Class\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Core\MatrixType.cpp">
+      <Filter>Class\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Core\PointType.cpp">
+      <Filter>Class\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Core\winBrush.cpp">
+      <Filter>Class\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\AbstractButtonObjectType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\AbstractDrawingObjectType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\AbstractFormObjectType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\AbstractShapeComponentType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\AbstractShapeObjectType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\alpha.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\ArcType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\AutoNumFormatType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\AutoNumNewNumType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\bookmark.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\booleanParam.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\caption.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\cellAddr.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\cellMargin.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\cellSpan.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\cellSz.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\cellzone.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\cellzoneList.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\charPr.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\cmyk.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\colLine.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\colSz.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\ColumnDefType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\ComboBoxType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\compose.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\ConnectLineType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\ConnectPointType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\ContainerType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\ctrl.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\curSz.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\CurveType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\drawText.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\dutmal.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\EditType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\effect.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\EffectsColorType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\EffectsType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\EllipseType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\EndNoteShapeType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\EquationType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\fieldBegin.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\fieldEnd.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\firstKey.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\flip.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\floatParam.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\FootNoteShapeType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\formCharPr.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\fwSpace.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\glow.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\grid.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\HeaderFooterType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\hiddenComment.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\hypen.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\imgClip.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\imgRect.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\indexmark.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\InsideMarginType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\integerParam.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\lineBreak.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\LineShapeType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\LineType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\ListBoxType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\ListItemType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\mainText.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\markpenBegin.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\markpenEnd.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\masterPage.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\nbSpace.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\noteLine.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\NoteShapeType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\noteSpacing.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\NoteType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\numbering.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\OLEType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\orgSz.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\outMargin.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\pageBorderFill.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\pageHiding.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\pageNum.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\pageNumCtrl.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\pagePr.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\ParaListType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\ParameterList.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\PictureType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\placement.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\pmargin.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\poffset.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\PolygonType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\pos.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\poutline.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\pshadow.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\PType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\RectangleType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\reflection.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\renderingInfo.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\rgb.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\rotationInfo.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\RunType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\ScaleType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\scheme.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\script.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\ScrollBarType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\secondKey.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\SectionDefinitionType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\seg.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\ShadowType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\shapeComment.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\SkewType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\softEdge.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\startNum.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\stringParam.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\subText.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\system.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\sz.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\t.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\tab.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\TableType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\tc.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\text.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\textart.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\textartPr.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\textMargin.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\titleMark.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\tr.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\UnknownObjectType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\VideoType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\visibility.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\adjustBaselineInFixedLinespacing.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\adjustBaselineOfObjectToBottom.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\adjustLineheightToFont.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\adjustParaBorderfillToSpacing.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\adjustParaBorderOffsetWithBorder.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\adjustVertPosOfLine.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\align.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\applyAtLeastToPercent100Pct.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\applyCharSpacingToCharGrid.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\applyExtendHeaderFooterEachSection.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\applyFontspaceToLatin.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\applyFontWeightToBold.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\applyMinColumnWidthTo1mm.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\applyNextspacingOfLastPara.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\applyParaBorderToOutside.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\applyPrevspacingBeneathObject.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\applyTabPosBasedOnSegment.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\autoSpacing.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\baseCharUnitOfIndentOnFirstChar.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\baseCharUnitOnEAsian.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\baseLineSpacingOnLineGrid.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\beginNum.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\bold.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\border.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\borderFills.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\BorderFillType.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\BorderType.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\breakSetting.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\breakTabOverLine.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\bullets.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\BulletType.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\charProperties.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\CharShapeType.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\CompatibleDocumentType.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\connectParaBorderfillOfEqualBorder.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\docoption.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\docoptionLinkInfo.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotAdjustEmptyAnchorLine.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotAdjustWordInJustify.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotAlignLastForbidden.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotAlignLastPeriod.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotAlignWhitespaceOnRight.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotApplyAutoSpaceEAsianEng.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotApplyAutoSpaceEAsianNum.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotApplyColSeparatorAtNoGap.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotApplyDiacSymMarkOfNoneAndSix.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotApplyExtensionCharCompose.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotApplyGridInHeaderFooter.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotApplyHeaderFooterAtNoSpace.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotApplyImageEffect.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotApplyLinegridAtNoLinespacing.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotApplyShapeComment.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotApplyStrikeoutWithUnderline.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotApplyVertOffsetOfForward.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotApplyWhiteSpaceHeight.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotFormattingAtBeneathAnchor.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\doNotHoldAnchorOfTable.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\emboss.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\engrave.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\extendLineheightToOffset.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\extendLineheightToParaBorderOffset.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\extendVertLimitToPageMargins.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\fixedUnderlineWidth.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\font.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\fontfaces.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\FontfaceType.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\fontRef.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\ForbiddenWordListType.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\heading.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\HWPMLHeadType.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\italic.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\layoutCompatibility.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\lineSpacing.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\MappingTableType.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\margin.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\memoProperties.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\MemoShapeType.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\numberings.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\NumberingType.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\offset.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\outline.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\overlapBothAllowOverlap.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\ParaHeadType.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\paraProperties.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\ParaShapeType.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\ratio.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\relSz.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\shadow.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\SlashType.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\spacing.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\strikeout.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\string.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\styles.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\StyleType.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\subscript.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\substFont.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\supscript.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\TabDefType.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\tabItem.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\tabProperties.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\treatQuotationAsLatin.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\typeInfo.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\underline.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\useInnerUnderline.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\useLowercaseStrikeout.cpp">
+      <Filter>Class\Head</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\CaretPosition.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\DeleteType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\DiffEntryType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\GuideType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\HistoryEntryType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\HWPApplicationSetting.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\HWPMLHistoryType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\identifier.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\InsertType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\item.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\itemref.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\language.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\ManifestType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\MasterPageType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\meta.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\MetadataType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\package.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\ParameterArrayType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\ParameterBinary.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\ParameterItemtype.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\ParameterSetType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\reference.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\SectionType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\site.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\SpineType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\title.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\tour.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\ToursType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\UpdateType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\version.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\DefaultHandler.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\ExpatAttribute.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\ExpatDefaultHandler.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\ExpatSaxReader.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Handler.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Object.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\PartNameSpaceInfo.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Thread.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Util.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\XMLAttribute.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\XMLSerializer.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\trackchange.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\trackchangetag.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Zip\encrypt.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\container.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\odfelement.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\AbstractDiffDataType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\PositionType.cpp">
+      <Filter>Class\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\anyelement.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\signatureelement.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\ChartType.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\DocDistribute.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\presentation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\label.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Head\trackchangeConfig.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\RDF\RDF.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Compatibility.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\GraphType.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\imgDim.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Para\MetaTag.cpp">
+      <Filter>Class\Para</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Document.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\NamespacePrefix.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="OWPML.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="OwpmlForDec.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Zip\SDZip.h">
+      <Filter>Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="Zip\unzip.h">
+      <Filter>Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="Zip\zip.h">
+      <Filter>Zip</Filter>
+    </ClInclude>
+    <ClInclude Include="Expat\amigaconfig.h">
+      <Filter>Expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Expat\ascii.h">
+      <Filter>Expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Expat\asciitab.h">
+      <Filter>Expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Expat\expat.h">
+      <Filter>Expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Expat\expat_external.h">
+      <Filter>Expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Expat\iasciitab.h">
+      <Filter>Expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Expat\internal.h">
+      <Filter>Expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Expat\latin1tab.h">
+      <Filter>Expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Expat\macconfig.h">
+      <Filter>Expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Expat\nametab.h">
+      <Filter>Expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Expat\utf8tab.h">
+      <Filter>Expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Expat\winconfig.h">
+      <Filter>Expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Expat\xmlrole.h">
+      <Filter>Expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Expat\xmltok.h">
+      <Filter>Expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Expat\xmltok_impl.h">
+      <Filter>Expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\ClassID.h">
+      <Filter>Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\classinclude.h">
+      <Filter>Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\enumdef.h">
+      <Filter>Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\MapMacro.h">
+      <Filter>Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Core\color.h">
+      <Filter>Class\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Core\FillBrushType.h">
+      <Filter>Class\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Core\gradation.h">
+      <Filter>Class\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Core\HWPValue.h">
+      <Filter>Class\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Core\ImageType.h">
+      <Filter>Class\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Core\imgBrush.h">
+      <Filter>Class\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Core\marginAtt.h">
+      <Filter>Class\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Core\MatrixType.h">
+      <Filter>Class\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Core\PointType.h">
+      <Filter>Class\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Core\winBrush.h">
+      <Filter>Class\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\AbstractButtonObjectType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\alpha.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\ArcType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\AutoNumFormatType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\AutoNumNewNumType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\bookmark.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\booleanParam.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\caption.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\cellAddr.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\cellMargin.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\cellSpan.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\cellSz.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\cellzone.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\cellzoneList.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\charPr.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\cmyk.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\colLine.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\colSz.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\ColumnDefType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\ComboBoxType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\compose.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\ConnectLineType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\ConnectPointType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\ContainerType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\ctrl.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\curSz.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\CurveType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\drawText.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\dutmal.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\EditType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\effect.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\EffectsColorType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\EffectsType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\EllipseType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\EndNoteShapeType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\EquationType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\fieldBegin.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\fieldEnd.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\firstKey.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\flip.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\floatParam.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\FootNoteShapeType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\formCharPr.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\fwSpace.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\glow.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\grid.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\HeaderFooterType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\hiddenComment.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\hypen.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\imgClip.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\imgRect.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\indexmark.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\InsideMarginType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\integerParam.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\lineBreak.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\LineShapeType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\LineType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\ListBoxType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\ListItemType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\mainText.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\markpenBegin.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\markpenEnd.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\masterPage.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\nbSpace.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\noteLine.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\NoteShapeType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\noteSpacing.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\NoteType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\numbering.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\OLEType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\orgSz.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\outMargin.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\pageBorderFill.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\pageHiding.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\pageNum.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\pageNumCtrl.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\pagePr.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\ParaListType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\ParameterList.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\PictureType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\placement.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\pmargin.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\poffset.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\PolygonType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\pos.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\poutline.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\pshadow.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\PType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\RectangleType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\reflection.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\renderingInfo.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\rgb.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\rotationInfo.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\RunType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\ScaleType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\scheme.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\script.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\ScrollBarType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\secondKey.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\SectionDefinitionType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\seg.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\ShadowType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\shapeComment.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\SkewType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\softEdge.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\startNum.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\stringParam.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\subText.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\system.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\sz.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\t.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\tab.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\TableType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\tc.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\text.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\textart.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\textartPr.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\textMargin.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\titleMark.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\tr.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\UnknownObjectType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\VideoType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\visibility.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\adjustBaselineInFixedLinespacing.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\adjustBaselineOfObjectToBottom.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\adjustLineheightToFont.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\adjustParaBorderfillToSpacing.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\adjustParaBorderOffsetWithBorder.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\adjustVertPosOfLine.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\align.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\applyAtLeastToPercent100Pct.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\applyCharSpacingToCharGrid.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\applyExtendHeaderFooterEachSection.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\applyFontspaceToLatin.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\applyFontWeightToBold.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\applyMinColumnWidthTo1mm.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\applyNextspacingOfLastPara.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\applyParaBorderToOutside.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\applyPrevspacingBeneathObject.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\applyTabPosBasedOnSegment.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\autoSpacing.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\baseCharUnitOfIndentOnFirstChar.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\baseCharUnitOnEAsian.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\baseLineSpacingOnLineGrid.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\beginNum.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\bold.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\border.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\borderFills.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\BorderFillType.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\BorderType.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\breakSetting.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\breakTabOverLine.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\bullets.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\BulletType.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\charProperties.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\CharShapeType.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\CompatibleDocumentType.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\connectParaBorderfillOfEqualBorder.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\docoption.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\docoptionLinkInfo.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotAdjustEmptyAnchorLine.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotAdjustWordInJustify.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotAlignLastForbidden.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotAlignLastPeriod.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotAlignWhitespaceOnRight.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotApplyAutoSpaceEAsianEng.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotApplyAutoSpaceEAsianNum.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotApplyColSeparatorAtNoGap.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotApplyDiacSymMarkOfNoneAndSix.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotApplyExtensionCharCompose.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotApplyGridInHeaderFooter.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotApplyHeaderFooterAtNoSpace.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotApplyImageEffect.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotApplyLinegridAtNoLinespacing.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotApplyShapeComment.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotApplyStrikeoutWithUnderline.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotApplyVertOffsetOfForward.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotApplyWhiteSpaceHeight.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotFormattingAtBeneathAnchor.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\doNotHoldAnchorOfTable.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\emboss.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\engrave.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\extendLineheightToOffset.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\extendLineheightToParaBorderOffset.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\extendVertLimitToPageMargins.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\fixedUnderlineWidth.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\font.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\fontfaces.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\FontfaceType.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\fontRef.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\ForbiddenWordListType.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\heading.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\HWPMLHeadType.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\italic.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\layoutCompatibility.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\lineSpacing.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\MappingTableType.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\margin.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\memoProperties.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\MemoShapeType.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\numberings.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\NumberingType.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\offset.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\outline.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\overlapBothAllowOverlap.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\ParaHeadType.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\paraProperties.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\ParaShapeType.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\ratio.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\relSz.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\shadow.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\SlashType.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\spacing.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\strikeout.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\string.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\styles.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\StyleType.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\subscript.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\substFont.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\supscript.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\TabDefType.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\tabItem.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\tabProperties.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\treatQuotationAsLatin.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\typeInfo.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\underline.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\useInnerUnderline.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\useLowercaseStrikeout.h">
+      <Filter>Class\Head</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\CaretPosition.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\DeleteType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\DiffEntryType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\GuideType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\HistoryEntryType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\HWPApplicationSetting.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\HWPMLHistoryType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\identifier.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\InsertType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\item.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\itemref.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\language.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\ManifestType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\MasterPageType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\meta.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\MetadataType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\package.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\ParameterArrayType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\ParameterBinary.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\ParameterItemtype.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\ParameterSetType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\reference.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\SectionType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\site.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\SpineType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\title.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\tour.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\ToursType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\UpdateType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\version.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Attribute.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\DefaultHandler.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\ExpatAttribute.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\ExpatDefaultHandler.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\ExpatSax.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\ExpatSaxReader.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Handler.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Object.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\PartNameSpaceInfo.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\SaxReader.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Serialize.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Thread.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Type.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Util.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\XMLAttribute.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\XMLSerializer.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\trackchange.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\trackchangetag.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Zip\encrypt.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\container.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\odfelement.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\AbstractDiffDataType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\PositionType.h">
+      <Filter>Class\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\anyelement.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\signatureelement.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\ChartType.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Etc\DocDistribute.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\presentation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\label.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Head\trackchangeConfig.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\RDF\RDF.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Compatibility.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\GraphType.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\imgDim.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Para\MetaTag.h">
+      <Filter>Class\Para</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Class\Para\AbstractDrawingObjectType.h">
+      <Filter>Class\Para</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Class\Para\AbstractFormObjectType.h">
+      <Filter>Class\Para</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Class\Para\AbstractShapeComponentType.h">
+      <Filter>Class\Para</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Class\Para\AbstractShapeObjectType.h">
+      <Filter>Class\Para</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

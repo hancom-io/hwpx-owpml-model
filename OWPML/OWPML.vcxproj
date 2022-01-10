@@ -1,0 +1,870 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2C5A1DC7-BB24-4D04-9B61-5D9FB07E3DEB}</ProjectGuid>
+    <RootNamespace>OWPML</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>./../Build/BinDebug/</OutDir>
+    <TargetName>Owpmld</TargetName>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>MixedRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>Owpmld</TargetName>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>MixedRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <OutDir>.\..\..\Build\WindowsDesktopOffice\Bin64Debug\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>./../Build/Bin/</OutDir>
+    <TargetName>Owpml</TargetName>
+    <CodeAnalysisRuleSet>MixedRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>Owpml</TargetName>
+    <OutDir>.\..\..\Build\WindowsDesktopOffice\Bin64\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./;./../;./../Common/;./Base/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;XML_UNICODE_WCHAR_T;USE_EXPAT;SHDK_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AdditionalOptions>/MP /Wv:18</AdditionalOptions>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <EnablePREfast>true</EnablePREfast>
+      <DisableSpecificWarnings>4996;6313;6326;6239</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)Owpmld.lib</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>OWPMLUtil.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>./;./../;./../../Common/;./Base/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;XML_UNICODE_WCHAR_T;USE_EXPAT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AdditionalOptions>/MP /Wv:18</AdditionalOptions>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <EnablePREfast>true</EnablePREfast>
+      <DisableSpecificWarnings>4996;6313;6326;6239</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)Owpmld.lib</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>./;./../;./../Common/;./Base/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_WINDOWS;XML_UNICODE_WCHAR_T;USE_EXPAT;SHDK_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <AdditionalOptions>/MP</AdditionalOptions>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>4702;4996;6386;28159;</DisableSpecificWarnings>
+      <EnablePREfast>true</EnablePREfast>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)Owpml.lib</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <AdditionalDependencies>OWPMLUtil.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>./;./../;./../../Common/;./Base/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_WINDOWS;XML_UNICODE_WCHAR_T;USE_EXPAT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <AdditionalOptions>/MP</AdditionalOptions>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>4702;4996;6386;28159;</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)Owpml.lib</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Base\Compatibility.cpp" />
+    <ClCompile Include="Base\DefaultHandler.cpp" />
+    <ClCompile Include="Base\ExpatAttribute.cpp" />
+    <ClCompile Include="Base\ExpatDefaultHandler.cpp" />
+    <ClCompile Include="Base\ExpatSaxReader.cpp" />
+    <ClCompile Include="Base\Handler.cpp" />
+    <ClCompile Include="Base\NamespacePrefix.cpp" />
+    <ClCompile Include="Base\Object.cpp" />
+    <ClCompile Include="Base\PartNameSpaceInfo.cpp" />
+    <ClCompile Include="Base\Thread.cpp" />
+    <ClCompile Include="Base\Util.cpp" />
+    <ClCompile Include="Base\XMLAttribute.cpp" />
+    <ClCompile Include="Base\XMLSerializer.cpp" />
+    <ClCompile Include="Class\Core\color.cpp" />
+    <ClCompile Include="Class\Core\FillBrushType.cpp" />
+    <ClCompile Include="Class\Core\gradation.cpp" />
+    <ClCompile Include="Class\Core\HWPValue.cpp" />
+    <ClCompile Include="Class\Core\ImageType.cpp" />
+    <ClCompile Include="Class\Core\imgBrush.cpp" />
+    <ClCompile Include="Class\Core\marginAtt.cpp" />
+    <ClCompile Include="Class\Core\MatrixType.cpp" />
+    <ClCompile Include="Class\Core\PointType.cpp" />
+    <ClCompile Include="Class\Core\winBrush.cpp" />
+    <ClCompile Include="Base\anyelement.cpp" />
+    <ClCompile Include="Class\Etc\CaretPosition.cpp" />
+    <ClCompile Include="Class\Etc\container.cpp" />
+    <ClCompile Include="Class\Etc\DeleteType.cpp" />
+    <ClCompile Include="Class\Etc\AbstractDiffDataType.cpp" />
+    <ClCompile Include="Class\Etc\DiffEntryType.cpp" />
+    <ClCompile Include="Class\Etc\DocDistribute.cpp" />
+    <ClCompile Include="Class\Etc\GuideType.cpp" />
+    <ClCompile Include="Class\Etc\HistoryEntryType.cpp" />
+    <ClCompile Include="Class\Etc\HWPApplicationSetting.cpp" />
+    <ClCompile Include="Class\Etc\HWPMLHistoryType.cpp" />
+    <ClCompile Include="Class\Etc\identifier.cpp" />
+    <ClCompile Include="Class\Etc\InsertType.cpp" />
+    <ClCompile Include="Class\Etc\item.cpp" />
+    <ClCompile Include="Class\Etc\itemref.cpp" />
+    <ClCompile Include="Class\Etc\language.cpp" />
+    <ClCompile Include="Class\Etc\ManifestType.cpp" />
+    <ClCompile Include="Class\Etc\MasterPageType.cpp" />
+    <ClCompile Include="Class\Etc\meta.cpp" />
+    <ClCompile Include="Class\Etc\MetadataType.cpp" />
+    <ClCompile Include="Class\Etc\odfelement.cpp">
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</PreprocessToFile>
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</PreprocessToFile>
+    </ClCompile>
+    <ClCompile Include="Class\Etc\package.cpp" />
+    <ClCompile Include="Class\Etc\ParameterArrayType.cpp" />
+    <ClCompile Include="Class\Etc\ParameterBinary.cpp" />
+    <ClCompile Include="Class\Etc\ParameterItemtype.cpp" />
+    <ClCompile Include="Class\Etc\ParameterSetType.cpp" />
+    <ClCompile Include="Class\Etc\PositionType.cpp" />
+    <ClCompile Include="Class\Etc\reference.cpp" />
+    <ClCompile Include="Class\Etc\SectionType.cpp" />
+    <ClCompile Include="Class\Etc\signatureelement.cpp" />
+    <ClCompile Include="Class\Etc\site.cpp" />
+    <ClCompile Include="Class\Etc\SpineType.cpp" />
+    <ClCompile Include="Class\Etc\title.cpp" />
+    <ClCompile Include="Class\Etc\tour.cpp" />
+    <ClCompile Include="Class\Etc\ToursType.cpp" />
+    <ClCompile Include="Class\Etc\UpdateType.cpp" />
+    <ClCompile Include="Class\Etc\version.cpp" />
+    <ClCompile Include="Class\Head\adjustBaselineInFixedLinespacing.cpp" />
+    <ClCompile Include="Class\Head\adjustBaselineOfObjectToBottom.cpp" />
+    <ClCompile Include="Class\Head\adjustLineheightToFont.cpp" />
+    <ClCompile Include="Class\Head\adjustParaBorderfillToSpacing.cpp" />
+    <ClCompile Include="Class\Head\adjustParaBorderOffsetWithBorder.cpp" />
+    <ClCompile Include="Class\Head\adjustVertPosOfLine.cpp" />
+    <ClCompile Include="Class\Head\align.cpp" />
+    <ClCompile Include="Class\Head\applyAtLeastToPercent100Pct.cpp" />
+    <ClCompile Include="Class\Head\applyCharSpacingToCharGrid.cpp" />
+    <ClCompile Include="Class\Head\applyExtendHeaderFooterEachSection.cpp" />
+    <ClCompile Include="Class\Head\applyFontspaceToLatin.cpp" />
+    <ClCompile Include="Class\Head\applyFontWeightToBold.cpp" />
+    <ClCompile Include="Class\Head\applyMinColumnWidthTo1mm.cpp" />
+    <ClCompile Include="Class\Head\applyNextspacingOfLastPara.cpp" />
+    <ClCompile Include="Class\Head\applyParaBorderToOutside.cpp" />
+    <ClCompile Include="Class\Head\applyPrevspacingBeneathObject.cpp" />
+    <ClCompile Include="Class\Head\applyTabPosBasedOnSegment.cpp" />
+    <ClCompile Include="Class\Head\autoSpacing.cpp" />
+    <ClCompile Include="Class\Head\baseCharUnitOfIndentOnFirstChar.cpp" />
+    <ClCompile Include="Class\Head\baseCharUnitOnEAsian.cpp" />
+    <ClCompile Include="Class\Head\baseLineSpacingOnLineGrid.cpp" />
+    <ClCompile Include="Class\Head\beginNum.cpp" />
+    <ClCompile Include="Class\Head\bold.cpp" />
+    <ClCompile Include="Class\Head\border.cpp" />
+    <ClCompile Include="Class\Head\borderFills.cpp" />
+    <ClCompile Include="Class\Head\BorderFillType.cpp" />
+    <ClCompile Include="Class\Head\BorderType.cpp" />
+    <ClCompile Include="Class\Head\breakSetting.cpp" />
+    <ClCompile Include="Class\Head\breakTabOverLine.cpp" />
+    <ClCompile Include="Class\Head\bullets.cpp" />
+    <ClCompile Include="Class\Head\BulletType.cpp" />
+    <ClCompile Include="Class\Head\charProperties.cpp" />
+    <ClCompile Include="Class\Head\CharShapeType.cpp" />
+    <ClCompile Include="Class\Head\CompatibleDocumentType.cpp" />
+    <ClCompile Include="Class\Head\connectParaBorderfillOfEqualBorder.cpp" />
+    <ClCompile Include="Class\Head\docoption.cpp" />
+    <ClCompile Include="Class\Head\docoptionLinkInfo.cpp" />
+    <ClCompile Include="Class\Head\doNotAdjustEmptyAnchorLine.cpp" />
+    <ClCompile Include="Class\Head\doNotAdjustWordInJustify.cpp" />
+    <ClCompile Include="Class\Head\doNotAlignLastForbidden.cpp" />
+    <ClCompile Include="Class\Head\doNotAlignLastPeriod.cpp" />
+    <ClCompile Include="Class\Head\doNotAlignWhitespaceOnRight.cpp" />
+    <ClCompile Include="Class\Head\doNotApplyAutoSpaceEAsianEng.cpp" />
+    <ClCompile Include="Class\Head\doNotApplyAutoSpaceEAsianNum.cpp" />
+    <ClCompile Include="Class\Head\doNotApplyColSeparatorAtNoGap.cpp" />
+    <ClCompile Include="Class\Head\doNotApplyDiacSymMarkOfNoneAndSix.cpp" />
+    <ClCompile Include="Class\Head\doNotApplyExtensionCharCompose.cpp" />
+    <ClCompile Include="Class\Head\doNotApplyGridInHeaderFooter.cpp" />
+    <ClCompile Include="Class\Head\doNotApplyHeaderFooterAtNoSpace.cpp" />
+    <ClCompile Include="Class\Head\doNotApplyImageEffect.cpp" />
+    <ClCompile Include="Class\Head\doNotApplyLinegridAtNoLinespacing.cpp" />
+    <ClCompile Include="Class\Head\doNotApplyShapeComment.cpp" />
+    <ClCompile Include="Class\Head\doNotApplyStrikeoutWithUnderline.cpp" />
+    <ClCompile Include="Class\Head\doNotApplyVertOffsetOfForward.cpp" />
+    <ClCompile Include="Class\Head\doNotApplyWhiteSpaceHeight.cpp" />
+    <ClCompile Include="Class\Head\doNotFormattingAtBeneathAnchor.cpp" />
+    <ClCompile Include="Class\Head\doNotHoldAnchorOfTable.cpp" />
+    <ClCompile Include="Class\Head\emboss.cpp" />
+    <ClCompile Include="Class\Head\engrave.cpp" />
+    <ClCompile Include="Class\Head\extendLineheightToOffset.cpp" />
+    <ClCompile Include="Class\Head\extendLineheightToParaBorderOffset.cpp" />
+    <ClCompile Include="Class\Head\extendVertLimitToPageMargins.cpp" />
+    <ClCompile Include="Class\Head\fixedUnderlineWidth.cpp" />
+    <ClCompile Include="Class\Head\font.cpp" />
+    <ClCompile Include="Class\Head\fontfaces.cpp" />
+    <ClCompile Include="Class\Head\FontfaceType.cpp" />
+    <ClCompile Include="Class\Head\fontRef.cpp" />
+    <ClCompile Include="Class\Head\ForbiddenWordListType.cpp" />
+    <ClCompile Include="Class\Head\heading.cpp" />
+    <ClCompile Include="Class\Head\HWPMLHeadType.cpp" />
+    <ClCompile Include="Class\Head\italic.cpp" />
+    <ClCompile Include="Class\Head\layoutCompatibility.cpp" />
+    <ClCompile Include="Class\Head\lineSpacing.cpp" />
+    <ClCompile Include="Class\Head\MappingTableType.cpp" />
+    <ClCompile Include="Class\Head\margin.cpp" />
+    <ClCompile Include="Class\Head\memoProperties.cpp" />
+    <ClCompile Include="Class\Head\MemoShapeType.cpp" />
+    <ClCompile Include="Class\Head\numberings.cpp" />
+    <ClCompile Include="Class\Head\NumberingType.cpp" />
+    <ClCompile Include="Class\Head\offset.cpp" />
+    <ClCompile Include="Class\Head\outline.cpp" />
+    <ClCompile Include="Class\Head\overlapBothAllowOverlap.cpp" />
+    <ClCompile Include="Class\Head\ParaHeadType.cpp" />
+    <ClCompile Include="Class\Head\paraProperties.cpp" />
+    <ClCompile Include="Class\Head\ParaShapeType.cpp" />
+    <ClCompile Include="Class\Head\ratio.cpp" />
+    <ClCompile Include="Class\Head\relSz.cpp" />
+    <ClCompile Include="Class\Head\shadow.cpp" />
+    <ClCompile Include="Class\Head\SlashType.cpp" />
+    <ClCompile Include="Class\Head\spacing.cpp" />
+    <ClCompile Include="Class\Head\strikeout.cpp" />
+    <ClCompile Include="Class\Head\string.cpp" />
+    <ClCompile Include="Class\Head\styles.cpp" />
+    <ClCompile Include="Class\Head\StyleType.cpp" />
+    <ClCompile Include="Class\Head\subscript.cpp" />
+    <ClCompile Include="Class\Head\substFont.cpp" />
+    <ClCompile Include="Class\Head\supscript.cpp" />
+    <ClCompile Include="Class\Head\TabDefType.cpp" />
+    <ClCompile Include="Class\Head\tabItem.cpp" />
+    <ClCompile Include="Class\Head\tabProperties.cpp" />
+    <ClCompile Include="Class\Head\trackchange.cpp" />
+    <ClCompile Include="Class\Head\trackchangeConfig.cpp" />
+    <ClCompile Include="Class\Head\treatQuotationAsLatin.cpp" />
+    <ClCompile Include="Class\Head\typeInfo.cpp" />
+    <ClCompile Include="Class\Head\underline.cpp" />
+    <ClCompile Include="Class\Head\useInnerUnderline.cpp" />
+    <ClCompile Include="Class\Head\useLowercaseStrikeout.cpp" />
+    <ClCompile Include="Class\Para\AbstractButtonObjectType.cpp" />
+    <ClCompile Include="Class\Para\AbstractDrawingObjectType.cpp" />
+    <ClCompile Include="Class\Para\AbstractFormObjectType.cpp" />
+    <ClCompile Include="Class\Para\AbstractShapeComponentType.cpp" />
+    <ClCompile Include="Class\Para\AbstractShapeObjectType.cpp" />
+    <ClCompile Include="Class\Para\alpha.cpp" />
+    <ClCompile Include="Class\Para\ArcType.cpp" />
+    <ClCompile Include="Class\Para\AutoNumFormatType.cpp" />
+    <ClCompile Include="Class\Para\AutoNumNewNumType.cpp" />
+    <ClCompile Include="Class\Para\bookmark.cpp" />
+    <ClCompile Include="Class\Para\booleanParam.cpp" />
+    <ClCompile Include="Class\Para\caption.cpp" />
+    <ClCompile Include="Class\Para\cellAddr.cpp" />
+    <ClCompile Include="Class\Para\cellMargin.cpp" />
+    <ClCompile Include="Class\Para\cellSpan.cpp" />
+    <ClCompile Include="Class\Para\cellSz.cpp" />
+    <ClCompile Include="Class\Para\cellzone.cpp" />
+    <ClCompile Include="Class\Para\cellzoneList.cpp" />
+    <ClCompile Include="Class\Para\charPr.cpp" />
+    <ClCompile Include="Class\Para\ChartType.cpp" />
+    <ClCompile Include="Class\Para\cmyk.cpp" />
+    <ClCompile Include="Class\Para\colLine.cpp" />
+    <ClCompile Include="Class\Para\colSz.cpp" />
+    <ClCompile Include="Class\Para\ColumnDefType.cpp" />
+    <ClCompile Include="Class\Para\ComboBoxType.cpp" />
+    <ClCompile Include="Class\Para\compose.cpp" />
+    <ClCompile Include="Class\Para\ConnectLineType.cpp" />
+    <ClCompile Include="Class\Para\ConnectPointType.cpp" />
+    <ClCompile Include="Class\Para\ContainerType.cpp" />
+    <ClCompile Include="Class\Para\ctrl.cpp" />
+    <ClCompile Include="Class\Para\curSz.cpp" />
+    <ClCompile Include="Class\Para\CurveType.cpp" />
+    <ClCompile Include="Class\Para\drawText.cpp" />
+    <ClCompile Include="Class\Para\dutmal.cpp" />
+    <ClCompile Include="Class\Para\EditType.cpp" />
+    <ClCompile Include="Class\Para\effect.cpp" />
+    <ClCompile Include="Class\Para\EffectsColorType.cpp" />
+    <ClCompile Include="Class\Para\EffectsType.cpp" />
+    <ClCompile Include="Class\Para\EllipseType.cpp" />
+    <ClCompile Include="Class\Para\EndNoteShapeType.cpp" />
+    <ClCompile Include="Class\Para\EquationType.cpp" />
+    <ClCompile Include="Class\Para\fieldBegin.cpp" />
+    <ClCompile Include="Class\Para\fieldEnd.cpp" />
+    <ClCompile Include="Class\Para\firstKey.cpp" />
+    <ClCompile Include="Class\Para\flip.cpp" />
+    <ClCompile Include="Class\Para\floatParam.cpp" />
+    <ClCompile Include="Class\Para\FootNoteShapeType.cpp" />
+    <ClCompile Include="Class\Para\formCharPr.cpp" />
+    <ClCompile Include="Class\Para\fwSpace.cpp" />
+    <ClCompile Include="Class\Para\glow.cpp" />
+    <ClCompile Include="Class\Para\GraphType.cpp" />
+    <ClCompile Include="Class\Para\grid.cpp" />
+    <ClCompile Include="Class\Para\HeaderFooterType.cpp" />
+    <ClCompile Include="Class\Para\hiddenComment.cpp" />
+    <ClCompile Include="Class\Para\hypen.cpp" />
+    <ClCompile Include="Class\Para\imgClip.cpp" />
+    <ClCompile Include="Class\Para\imgDim.cpp" />
+    <ClCompile Include="Class\Para\imgRect.cpp" />
+    <ClCompile Include="Class\Para\indexmark.cpp" />
+    <ClCompile Include="Class\Para\InsideMarginType.cpp" />
+    <ClCompile Include="Class\Para\integerParam.cpp" />
+    <ClCompile Include="Class\Para\label.cpp" />
+    <ClCompile Include="Class\Para\lineBreak.cpp" />
+    <ClCompile Include="Class\Para\LineShapeType.cpp" />
+    <ClCompile Include="Class\Para\LineType.cpp" />
+    <ClCompile Include="Class\Para\ListBoxType.cpp" />
+    <ClCompile Include="Class\Para\ListItemType.cpp" />
+    <ClCompile Include="Class\Para\mainText.cpp" />
+    <ClCompile Include="Class\Para\markpenBegin.cpp" />
+    <ClCompile Include="Class\Para\markpenEnd.cpp" />
+    <ClCompile Include="Class\Para\masterPage.cpp" />
+    <ClCompile Include="Class\Para\MetaTag.cpp" />
+    <ClCompile Include="Class\Para\nbSpace.cpp" />
+    <ClCompile Include="Class\Para\noteLine.cpp" />
+    <ClCompile Include="Class\Para\NoteShapeType.cpp" />
+    <ClCompile Include="Class\Para\noteSpacing.cpp" />
+    <ClCompile Include="Class\Para\NoteType.cpp" />
+    <ClCompile Include="Class\Para\numbering.cpp" />
+    <ClCompile Include="Class\Para\OLEType.cpp" />
+    <ClCompile Include="Class\Para\orgSz.cpp" />
+    <ClCompile Include="Class\Para\outMargin.cpp" />
+    <ClCompile Include="Class\Para\pageBorderFill.cpp" />
+    <ClCompile Include="Class\Para\pageHiding.cpp" />
+    <ClCompile Include="Class\Para\pageNum.cpp" />
+    <ClCompile Include="Class\Para\pageNumCtrl.cpp" />
+    <ClCompile Include="Class\Para\pagePr.cpp" />
+    <ClCompile Include="Class\Para\ParaListType.cpp" />
+    <ClCompile Include="Class\Para\ParameterList.cpp" />
+    <ClCompile Include="Class\Para\PictureType.cpp" />
+    <ClCompile Include="Class\Para\placement.cpp" />
+    <ClCompile Include="Class\Para\pmargin.cpp" />
+    <ClCompile Include="Class\Para\poffset.cpp" />
+    <ClCompile Include="Class\Para\PolygonType.cpp" />
+    <ClCompile Include="Class\Para\pos.cpp" />
+    <ClCompile Include="Class\Para\poutline.cpp" />
+    <ClCompile Include="Class\Para\presentation.cpp" />
+    <ClCompile Include="Class\Para\pshadow.cpp" />
+    <ClCompile Include="Class\Para\PType.cpp" />
+    <ClCompile Include="Class\Para\RectangleType.cpp" />
+    <ClCompile Include="Class\Para\reflection.cpp" />
+    <ClCompile Include="Class\Para\renderingInfo.cpp" />
+    <ClCompile Include="Class\Para\rgb.cpp" />
+    <ClCompile Include="Class\Para\rotationInfo.cpp" />
+    <ClCompile Include="Class\Para\RunType.cpp" />
+    <ClCompile Include="Class\Para\ScaleType.cpp" />
+    <ClCompile Include="Class\Para\scheme.cpp" />
+    <ClCompile Include="Class\Para\script.cpp" />
+    <ClCompile Include="Class\Para\ScrollBarType.cpp" />
+    <ClCompile Include="Class\Para\secondKey.cpp" />
+    <ClCompile Include="Class\Para\SectionDefinitionType.cpp" />
+    <ClCompile Include="Class\Para\seg.cpp" />
+    <ClCompile Include="Class\Para\ShadowType.cpp" />
+    <ClCompile Include="Class\Para\shapeComment.cpp" />
+    <ClCompile Include="Class\Para\SkewType.cpp" />
+    <ClCompile Include="Class\Para\softEdge.cpp" />
+    <ClCompile Include="Class\Para\startNum.cpp" />
+    <ClCompile Include="Class\Para\stringParam.cpp" />
+    <ClCompile Include="Class\Para\subText.cpp" />
+    <ClCompile Include="Class\Para\system.cpp" />
+    <ClCompile Include="Class\Para\sz.cpp" />
+    <ClCompile Include="Class\Para\t.cpp" />
+    <ClCompile Include="Class\Para\tab.cpp" />
+    <ClCompile Include="Class\Para\TableType.cpp" />
+    <ClCompile Include="Class\Para\tc.cpp" />
+    <ClCompile Include="Class\Para\text.cpp" />
+    <ClCompile Include="Class\Para\textart.cpp" />
+    <ClCompile Include="Class\Para\textartPr.cpp" />
+    <ClCompile Include="Class\Para\textMargin.cpp" />
+    <ClCompile Include="Class\Para\titleMark.cpp" />
+    <ClCompile Include="Class\Para\tr.cpp" />
+    <ClCompile Include="Class\Para\trackchangetag.cpp" />
+    <ClCompile Include="Class\Para\UnknownObjectType.cpp" />
+    <ClCompile Include="Class\Para\VideoType.cpp" />
+    <ClCompile Include="Class\Para\visibility.cpp" />
+    <ClCompile Include="Class\RDF\RDF.cpp" />
+    <ClCompile Include="Document.cpp" />
+    <ClCompile Include="Expat\xmlparse.cpp">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level4</WarningLevel>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Level4</WarningLevel>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatWarningAsError>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</TreatWarningAsError>
+    </ClCompile>
+    <ClCompile Include="Expat\xmlrole.cpp" />
+    <ClCompile Include="Expat\xmltok.cpp" />
+    <ClCompile Include="Expat\xmltok_impl.cpp">
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatWarningAsError>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</TreatWarningAsError>
+    </ClCompile>
+    <ClCompile Include="Expat\xmltok_ns.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Zip\encrypt.cpp" />
+    <ClCompile Include="Zip\SDZip.cpp" />
+    <ClCompile Include="Zip\unzip.cpp" />
+    <ClCompile Include="Zip\zip.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Base\Compatibility.h" />
+    <ClInclude Include="Base\Attribute.h" />
+    <ClInclude Include="Base\DefaultHandler.h" />
+    <ClInclude Include="Base\ExpatAttribute.h" />
+    <ClInclude Include="Base\ExpatDefaultHandler.h" />
+    <ClInclude Include="Base\ExpatSax.h" />
+    <ClInclude Include="Base\ExpatSaxReader.h" />
+    <ClInclude Include="Base\Handler.h" />
+    <ClInclude Include="Base\NamespacePrefix.h" />
+    <ClInclude Include="Base\Object.h" />
+    <ClInclude Include="Base\PartNameSpaceInfo.h" />
+    <ClInclude Include="Base\SaxReader.h" />
+    <ClInclude Include="Base\Serialize.h" />
+    <ClInclude Include="Base\Thread.h" />
+    <ClInclude Include="Base\Type.h" />
+    <ClInclude Include="Base\Util.h" />
+    <ClInclude Include="Base\XMLAttribute.h" />
+    <ClInclude Include="Base\XMLSerializer.h" />
+    <ClInclude Include="Class\ClassID.h" />
+    <ClInclude Include="Class\classinclude.h" />
+    <ClInclude Include="Class\Core\color.h" />
+    <ClInclude Include="Class\Core\FillBrushType.h" />
+    <ClInclude Include="Class\Core\gradation.h" />
+    <ClInclude Include="Class\Core\HWPValue.h" />
+    <ClInclude Include="Class\Core\ImageType.h" />
+    <ClInclude Include="Class\Core\imgBrush.h" />
+    <ClInclude Include="Class\Core\marginAtt.h" />
+    <ClInclude Include="Class\Core\MatrixType.h" />
+    <ClInclude Include="Class\Core\PointType.h" />
+    <ClInclude Include="Class\Core\winBrush.h" />
+    <ClInclude Include="Class\enumdef.h" />
+    <ClInclude Include="Base\anyelement.h" />
+    <ClInclude Include="Class\Etc\CaretPosition.h" />
+    <ClInclude Include="Class\Etc\container.h" />
+    <ClInclude Include="Class\Etc\DeleteType.h" />
+    <ClInclude Include="Class\Etc\AbstractDiffDataType.h" />
+    <ClInclude Include="Class\Etc\DiffEntryType.h" />
+    <ClInclude Include="Class\Etc\DocDistribute.h" />
+    <ClInclude Include="Class\Etc\GuideType.h" />
+    <ClInclude Include="Class\Etc\HistoryEntryType.h" />
+    <ClInclude Include="Class\Etc\HWPApplicationSetting.h" />
+    <ClInclude Include="Class\Etc\HWPMLHistoryType.h" />
+    <ClInclude Include="Class\Etc\identifier.h" />
+    <ClInclude Include="Class\Etc\InsertType.h" />
+    <ClInclude Include="Class\Etc\item.h" />
+    <ClInclude Include="Class\Etc\itemref.h" />
+    <ClInclude Include="Class\Etc\language.h" />
+    <ClInclude Include="Class\Etc\ManifestType.h" />
+    <ClInclude Include="Class\Etc\MasterPageType.h" />
+    <ClInclude Include="Class\Etc\meta.h" />
+    <ClInclude Include="Class\Etc\MetadataType.h" />
+    <ClInclude Include="Class\Etc\odfelement.h" />
+    <ClInclude Include="Class\Etc\package.h" />
+    <ClInclude Include="Class\Etc\ParameterArrayType.h" />
+    <ClInclude Include="Class\Etc\ParameterBinary.h" />
+    <ClInclude Include="Class\Etc\ParameterItemtype.h" />
+    <ClInclude Include="Class\Etc\ParameterSetType.h" />
+    <ClInclude Include="Class\Etc\PositionType.h" />
+    <ClInclude Include="Class\Etc\reference.h" />
+    <ClInclude Include="Class\Etc\SectionType.h" />
+    <ClInclude Include="Class\Etc\signatureelement.h" />
+    <ClInclude Include="Class\Etc\site.h" />
+    <ClInclude Include="Class\Etc\SpineType.h" />
+    <ClInclude Include="Class\Etc\title.h" />
+    <ClInclude Include="Class\Etc\tour.h" />
+    <ClInclude Include="Class\Etc\ToursType.h" />
+    <ClInclude Include="Class\Etc\UpdateType.h" />
+    <ClInclude Include="Class\Etc\version.h" />
+    <ClInclude Include="Class\Head\adjustBaselineInFixedLinespacing.h" />
+    <ClInclude Include="Class\Head\adjustBaselineOfObjectToBottom.h" />
+    <ClInclude Include="Class\Head\adjustLineheightToFont.h" />
+    <ClInclude Include="Class\Head\adjustParaBorderfillToSpacing.h" />
+    <ClInclude Include="Class\Head\adjustParaBorderOffsetWithBorder.h" />
+    <ClInclude Include="Class\Head\adjustVertPosOfLine.h" />
+    <ClInclude Include="Class\Head\align.h" />
+    <ClInclude Include="Class\Head\applyAtLeastToPercent100Pct.h" />
+    <ClInclude Include="Class\Head\applyCharSpacingToCharGrid.h" />
+    <ClInclude Include="Class\Head\applyExtendHeaderFooterEachSection.h" />
+    <ClInclude Include="Class\Head\applyFontspaceToLatin.h" />
+    <ClInclude Include="Class\Head\applyFontWeightToBold.h" />
+    <ClInclude Include="Class\Head\applyMinColumnWidthTo1mm.h" />
+    <ClInclude Include="Class\Head\applyNextspacingOfLastPara.h" />
+    <ClInclude Include="Class\Head\applyParaBorderToOutside.h" />
+    <ClInclude Include="Class\Head\applyPrevspacingBeneathObject.h" />
+    <ClInclude Include="Class\Head\applyTabPosBasedOnSegment.h" />
+    <ClInclude Include="Class\Head\autoSpacing.h" />
+    <ClInclude Include="Class\Head\baseCharUnitOfIndentOnFirstChar.h" />
+    <ClInclude Include="Class\Head\baseCharUnitOnEAsian.h" />
+    <ClInclude Include="Class\Head\baseLineSpacingOnLineGrid.h" />
+    <ClInclude Include="Class\Head\beginNum.h" />
+    <ClInclude Include="Class\Head\bold.h" />
+    <ClInclude Include="Class\Head\border.h" />
+    <ClInclude Include="Class\Head\borderFills.h" />
+    <ClInclude Include="Class\Head\BorderFillType.h" />
+    <ClInclude Include="Class\Head\BorderType.h" />
+    <ClInclude Include="Class\Head\breakSetting.h" />
+    <ClInclude Include="Class\Head\breakTabOverLine.h" />
+    <ClInclude Include="Class\Head\bullets.h" />
+    <ClInclude Include="Class\Head\BulletType.h" />
+    <ClInclude Include="Class\Head\charProperties.h" />
+    <ClInclude Include="Class\Head\CharShapeType.h" />
+    <ClInclude Include="Class\Head\CompatibleDocumentType.h" />
+    <ClInclude Include="Class\Head\connectParaBorderfillOfEqualBorder.h" />
+    <ClInclude Include="Class\Head\docoption.h" />
+    <ClInclude Include="Class\Head\docoptionLinkInfo.h" />
+    <ClInclude Include="Class\Head\doNotAdjustEmptyAnchorLine.h" />
+    <ClInclude Include="Class\Head\doNotAdjustWordInJustify.h" />
+    <ClInclude Include="Class\Head\doNotAlignLastForbidden.h" />
+    <ClInclude Include="Class\Head\doNotAlignLastPeriod.h" />
+    <ClInclude Include="Class\Head\doNotAlignWhitespaceOnRight.h" />
+    <ClInclude Include="Class\Head\doNotApplyAutoSpaceEAsianEng.h" />
+    <ClInclude Include="Class\Head\doNotApplyAutoSpaceEAsianNum.h" />
+    <ClInclude Include="Class\Head\doNotApplyColSeparatorAtNoGap.h" />
+    <ClInclude Include="Class\Head\doNotApplyDiacSymMarkOfNoneAndSix.h" />
+    <ClInclude Include="Class\Head\doNotApplyExtensionCharCompose.h" />
+    <ClInclude Include="Class\Head\doNotApplyGridInHeaderFooter.h" />
+    <ClInclude Include="Class\Head\doNotApplyHeaderFooterAtNoSpace.h" />
+    <ClInclude Include="Class\Head\doNotApplyImageEffect.h" />
+    <ClInclude Include="Class\Head\doNotApplyLinegridAtNoLinespacing.h" />
+    <ClInclude Include="Class\Head\doNotApplyShapeComment.h" />
+    <ClInclude Include="Class\Head\doNotApplyStrikeoutWithUnderline.h" />
+    <ClInclude Include="Class\Head\doNotApplyVertOffsetOfForward.h" />
+    <ClInclude Include="Class\Head\doNotApplyWhiteSpaceHeight.h" />
+    <ClInclude Include="Class\Head\doNotFormattingAtBeneathAnchor.h" />
+    <ClInclude Include="Class\Head\doNotHoldAnchorOfTable.h" />
+    <ClInclude Include="Class\Head\emboss.h" />
+    <ClInclude Include="Class\Head\engrave.h" />
+    <ClInclude Include="Class\Head\extendLineheightToOffset.h" />
+    <ClInclude Include="Class\Head\extendLineheightToParaBorderOffset.h" />
+    <ClInclude Include="Class\Head\extendVertLimitToPageMargins.h" />
+    <ClInclude Include="Class\Head\fixedUnderlineWidth.h" />
+    <ClInclude Include="Class\Head\font.h" />
+    <ClInclude Include="Class\Head\fontfaces.h" />
+    <ClInclude Include="Class\Head\FontfaceType.h" />
+    <ClInclude Include="Class\Head\fontRef.h" />
+    <ClInclude Include="Class\Head\ForbiddenWordListType.h" />
+    <ClInclude Include="Class\Head\heading.h" />
+    <ClInclude Include="Class\Head\HWPMLHeadType.h" />
+    <ClInclude Include="Class\Head\italic.h" />
+    <ClInclude Include="Class\Head\layoutCompatibility.h" />
+    <ClInclude Include="Class\Head\lineSpacing.h" />
+    <ClInclude Include="Class\Head\MappingTableType.h" />
+    <ClInclude Include="Class\Head\margin.h" />
+    <ClInclude Include="Class\Head\memoProperties.h" />
+    <ClInclude Include="Class\Head\MemoShapeType.h" />
+    <ClInclude Include="Class\Head\numberings.h" />
+    <ClInclude Include="Class\Head\NumberingType.h" />
+    <ClInclude Include="Class\Head\offset.h" />
+    <ClInclude Include="Class\Head\outline.h" />
+    <ClInclude Include="Class\Head\overlapBothAllowOverlap.h" />
+    <ClInclude Include="Class\Head\ParaHeadType.h" />
+    <ClInclude Include="Class\Head\paraProperties.h" />
+    <ClInclude Include="Class\Head\ParaShapeType.h" />
+    <ClInclude Include="Class\Head\ratio.h" />
+    <ClInclude Include="Class\Head\relSz.h" />
+    <ClInclude Include="Class\Head\shadow.h" />
+    <ClInclude Include="Class\Head\SlashType.h" />
+    <ClInclude Include="Class\Head\spacing.h" />
+    <ClInclude Include="Class\Head\strikeout.h" />
+    <ClInclude Include="Class\Head\string.h" />
+    <ClInclude Include="Class\Head\styles.h" />
+    <ClInclude Include="Class\Head\StyleType.h" />
+    <ClInclude Include="Class\Head\subscript.h" />
+    <ClInclude Include="Class\Head\substFont.h" />
+    <ClInclude Include="Class\Head\supscript.h" />
+    <ClInclude Include="Class\Head\TabDefType.h" />
+    <ClInclude Include="Class\Head\tabItem.h" />
+    <ClInclude Include="Class\Head\tabProperties.h" />
+    <ClInclude Include="Class\Head\trackchange.h" />
+    <ClInclude Include="Class\Head\trackchangeConfig.h" />
+    <ClInclude Include="Class\Head\treatQuotationAsLatin.h" />
+    <ClInclude Include="Class\Head\typeInfo.h" />
+    <ClInclude Include="Class\Head\underline.h" />
+    <ClInclude Include="Class\Head\useInnerUnderline.h" />
+    <ClInclude Include="Class\Head\useLowercaseStrikeout.h" />
+    <ClInclude Include="Class\MapMacro.h" />
+    <ClInclude Include="Class\Para\AbstractButtonObjectType.h" />
+    <CustomBuild Include="Class\Para\AbstractDrawingObjectType.h" />
+    <CustomBuild Include="Class\Para\AbstractFormObjectType.h" />
+    <CustomBuild Include="Class\Para\AbstractShapeComponentType.h" />
+    <CustomBuild Include="Class\Para\AbstractShapeObjectType.h" />
+    <ClInclude Include="Class\Para\alpha.h" />
+    <ClInclude Include="Class\Para\ArcType.h" />
+    <ClInclude Include="Class\Para\AutoNumFormatType.h" />
+    <ClInclude Include="Class\Para\AutoNumNewNumType.h" />
+    <ClInclude Include="Class\Para\bookmark.h" />
+    <ClInclude Include="Class\Para\booleanParam.h" />
+    <ClInclude Include="Class\Para\caption.h" />
+    <ClInclude Include="Class\Para\cellAddr.h" />
+    <ClInclude Include="Class\Para\cellMargin.h" />
+    <ClInclude Include="Class\Para\cellSpan.h" />
+    <ClInclude Include="Class\Para\cellSz.h" />
+    <ClInclude Include="Class\Para\cellzone.h" />
+    <ClInclude Include="Class\Para\cellzoneList.h" />
+    <ClInclude Include="Class\Para\charPr.h" />
+    <ClInclude Include="Class\Para\ChartType.h" />
+    <ClInclude Include="Class\Para\cmyk.h" />
+    <ClInclude Include="Class\Para\colLine.h" />
+    <ClInclude Include="Class\Para\colSz.h" />
+    <ClInclude Include="Class\Para\ColumnDefType.h" />
+    <ClInclude Include="Class\Para\ComboBoxType.h" />
+    <ClInclude Include="Class\Para\compose.h" />
+    <ClInclude Include="Class\Para\ConnectLineType.h" />
+    <ClInclude Include="Class\Para\ConnectPointType.h" />
+    <ClInclude Include="Class\Para\ContainerType.h" />
+    <ClInclude Include="Class\Para\ctrl.h" />
+    <ClInclude Include="Class\Para\curSz.h" />
+    <ClInclude Include="Class\Para\CurveType.h" />
+    <ClInclude Include="Class\Para\drawText.h" />
+    <ClInclude Include="Class\Para\dutmal.h" />
+    <ClInclude Include="Class\Para\EditType.h" />
+    <ClInclude Include="Class\Para\effect.h" />
+    <ClInclude Include="Class\Para\EffectsColorType.h" />
+    <ClInclude Include="Class\Para\EffectsType.h" />
+    <ClInclude Include="Class\Para\EllipseType.h" />
+    <ClInclude Include="Class\Para\EndNoteShapeType.h" />
+    <ClInclude Include="Class\Para\EquationType.h" />
+    <ClInclude Include="Class\Para\fieldBegin.h" />
+    <ClInclude Include="Class\Para\fieldEnd.h" />
+    <ClInclude Include="Class\Para\firstKey.h" />
+    <ClInclude Include="Class\Para\flip.h" />
+    <ClInclude Include="Class\Para\floatParam.h" />
+    <ClInclude Include="Class\Para\FootNoteShapeType.h" />
+    <ClInclude Include="Class\Para\formCharPr.h" />
+    <ClInclude Include="Class\Para\fwSpace.h" />
+    <ClInclude Include="Class\Para\glow.h" />
+    <ClInclude Include="Class\Para\GraphType.h" />
+    <ClInclude Include="Class\Para\grid.h" />
+    <ClInclude Include="Class\Para\HeaderFooterType.h" />
+    <ClInclude Include="Class\Para\hiddenComment.h" />
+    <ClInclude Include="Class\Para\hypen.h" />
+    <ClInclude Include="Class\Para\imgClip.h" />
+    <ClInclude Include="Class\Para\imgDim.h" />
+    <ClInclude Include="Class\Para\imgRect.h" />
+    <ClInclude Include="Class\Para\indexmark.h" />
+    <ClInclude Include="Class\Para\InsideMarginType.h" />
+    <ClInclude Include="Class\Para\integerParam.h" />
+    <ClInclude Include="Class\Para\label.h" />
+    <ClInclude Include="Class\Para\lineBreak.h" />
+    <ClInclude Include="Class\Para\LineShapeType.h" />
+    <ClInclude Include="Class\Para\LineType.h" />
+    <ClInclude Include="Class\Para\ListBoxType.h" />
+    <ClInclude Include="Class\Para\ListItemType.h" />
+    <ClInclude Include="Class\Para\mainText.h" />
+    <ClInclude Include="Class\Para\markpenBegin.h" />
+    <ClInclude Include="Class\Para\markpenEnd.h" />
+    <ClInclude Include="Class\Para\masterPage.h" />
+    <ClInclude Include="Class\Para\MetaTag.h" />
+    <ClInclude Include="Class\Para\nbSpace.h" />
+    <ClInclude Include="Class\Para\noteLine.h" />
+    <ClInclude Include="Class\Para\NoteShapeType.h" />
+    <ClInclude Include="Class\Para\noteSpacing.h" />
+    <ClInclude Include="Class\Para\NoteType.h" />
+    <ClInclude Include="Class\Para\numbering.h" />
+    <ClInclude Include="Class\Para\OLEType.h" />
+    <ClInclude Include="Class\Para\orgSz.h" />
+    <ClInclude Include="Class\Para\outMargin.h" />
+    <ClInclude Include="Class\Para\pageBorderFill.h" />
+    <ClInclude Include="Class\Para\pageHiding.h" />
+    <ClInclude Include="Class\Para\pageNum.h" />
+    <ClInclude Include="Class\Para\pageNumCtrl.h" />
+    <ClInclude Include="Class\Para\pagePr.h" />
+    <ClInclude Include="Class\Para\ParaListType.h" />
+    <ClInclude Include="Class\Para\ParameterList.h" />
+    <ClInclude Include="Class\Para\PictureType.h" />
+    <ClInclude Include="Class\Para\placement.h" />
+    <ClInclude Include="Class\Para\pmargin.h" />
+    <ClInclude Include="Class\Para\poffset.h" />
+    <ClInclude Include="Class\Para\PolygonType.h" />
+    <ClInclude Include="Class\Para\pos.h" />
+    <ClInclude Include="Class\Para\poutline.h" />
+    <ClInclude Include="Class\Para\presentation.h" />
+    <ClInclude Include="Class\Para\pshadow.h" />
+    <ClInclude Include="Class\Para\PType.h" />
+    <ClInclude Include="Class\Para\RectangleType.h" />
+    <ClInclude Include="Class\Para\reflection.h" />
+    <ClInclude Include="Class\Para\renderingInfo.h" />
+    <ClInclude Include="Class\Para\rgb.h" />
+    <ClInclude Include="Class\Para\rotationInfo.h" />
+    <ClInclude Include="Class\Para\RunType.h" />
+    <ClInclude Include="Class\Para\ScaleType.h" />
+    <ClInclude Include="Class\Para\scheme.h" />
+    <ClInclude Include="Class\Para\script.h" />
+    <ClInclude Include="Class\Para\ScrollBarType.h" />
+    <ClInclude Include="Class\Para\secondKey.h" />
+    <ClInclude Include="Class\Para\SectionDefinitionType.h" />
+    <ClInclude Include="Class\Para\seg.h" />
+    <ClInclude Include="Class\Para\ShadowType.h" />
+    <ClInclude Include="Class\Para\shapeComment.h" />
+    <ClInclude Include="Class\Para\SkewType.h" />
+    <ClInclude Include="Class\Para\softEdge.h" />
+    <ClInclude Include="Class\Para\startNum.h" />
+    <ClInclude Include="Class\Para\stringParam.h" />
+    <ClInclude Include="Class\Para\subText.h" />
+    <ClInclude Include="Class\Para\system.h" />
+    <ClInclude Include="Class\Para\sz.h" />
+    <ClInclude Include="Class\Para\t.h" />
+    <ClInclude Include="Class\Para\tab.h" />
+    <ClInclude Include="Class\Para\TableType.h" />
+    <ClInclude Include="Class\Para\tc.h" />
+    <ClInclude Include="Class\Para\text.h" />
+    <ClInclude Include="Class\Para\textart.h" />
+    <ClInclude Include="Class\Para\textartPr.h" />
+    <ClInclude Include="Class\Para\textMargin.h" />
+    <ClInclude Include="Class\Para\titleMark.h" />
+    <ClInclude Include="Class\Para\tr.h" />
+    <ClInclude Include="Class\Para\trackchangetag.h" />
+    <ClInclude Include="Class\Para\UnknownObjectType.h" />
+    <ClInclude Include="Class\Para\VideoType.h" />
+    <ClInclude Include="Class\Para\visibility.h" />
+    <ClInclude Include="Class\RDF\RDF.h" />
+    <ClInclude Include="Document.h" />
+    <ClInclude Include="Expat\amigaconfig.h" />
+    <ClInclude Include="Expat\ascii.h" />
+    <ClInclude Include="Expat\asciitab.h" />
+    <ClInclude Include="Expat\expat.h" />
+    <ClInclude Include="Expat\expat_external.h" />
+    <ClInclude Include="Expat\iasciitab.h" />
+    <ClInclude Include="Expat\internal.h" />
+    <ClInclude Include="Expat\latin1tab.h" />
+    <ClInclude Include="Expat\macconfig.h" />
+    <ClInclude Include="Expat\nametab.h" />
+    <ClInclude Include="Expat\utf8tab.h" />
+    <ClInclude Include="Expat\winconfig.h" />
+    <ClInclude Include="Expat\xmlrole.h" />
+    <ClInclude Include="Expat\xmltok.h" />
+    <ClInclude Include="Expat\xmltok_impl.h" />
+    <ClInclude Include="OWPML.h" />
+    <ClInclude Include="OwpmlForDec.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Zip\encrypt.h" />
+    <ClInclude Include="Zip\SDZip.h" />
+    <ClInclude Include="Zip\unzip.h" />
+    <ClInclude Include="Zip\zip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
