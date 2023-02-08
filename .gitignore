@@ -1,0 +1,62 @@
+Debug/
+Debug_NoCA/
+Debug _NoCA/
+Debug KOR/
+Debug ENU/
+Debug ENU Res/
+Debug(NoCRT) - for Internal/
+Release/
+Release KOR/
+Release ENU/
+ViewerDebug/
+ViewerDebug KOR/
+ViewerDebug ENU/
+ViewerRelease/
+ViewerRelease KOR/
+ViewerRelease ENU/
+Build/
+*.ncb
+#ignore thumbnails created by windows
+Thumbs.db
+#Ignore files build by Visual Studio
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.bak
+*.cache
+*.ilk
+*.log
+*.res
+*.sbr
+*.ipch
+*.sdf
+*.opensdf
+*.vs
+obj/
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+#Ignore files auto creaged
+project.xcworkspace
+xcuserdata
+.DS_Store
+
+# ignore files for Emacs
+*~
+#*#
+
+#ignore files for vim or vi
+*.swp
+
+#ignore files for ctags
+tags
+
+#ignore directory (gradle, androidstudio)
+.idea/
+.gradle/
+*.iml

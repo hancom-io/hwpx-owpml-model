@@ -1,0 +1,82 @@
+/*
+ * Copyright 2022 Hancom Inc. All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "stdafx.h"
+#include "Object.h"
+#include "Attribute.h"
+#include "Util.h"
+#include "Serialize.h"
+#include "tour.h"
+
+namespace OWPML {
+
+    CTour* CTour::Create()
+    {
+        return new CTour();
+    }
+
+    CTour::CTour() : CExtObject(ID_OPF_Tour)
+    {
+    }
+
+    CTour::~CTour()
+    {
+    }
+
+    void CTour::InitMap(bool bRead)
+    {
+        OWPML_OPF_REDIRECT_FUNC(CTour, site)
+
+            OWPML_BEGIN_IMPLEMENT_FUNCMAP(CTour)
+            OWPML_OPF_ADD_REDIRECT_FUNC(site, CSite, ID_OPF_Site)
+            OWPML_END_IMPLEMENT_FUNCMAP()
+    }
+
+    bool CTour::WriteElement(LPCWSTR pCurObjName, CSerializer* serialize, CAttribute* att)
+    {
+        Util::CXMLAttConverter::SetAttribute(att, L"id", m_strId);
+        Util::CXMLAttConverter::SetAttribute(att, L"title", m_strTitle);
+
+        return serialize->WriteElement(pCurObjName, this, att, NULL);
+    }
+
+    bool CTour::ReadAttribute(CAttribute* att)
+    {
+        bool bres = TRUE;
+        bres &= Util::CXMLAttConverter::GetAttribute(att, L"id", m_strId);
+        bres &= Util::CXMLAttConverter::GetAttribute(att, L"title", m_strTitle);
+
+        bres &= CExtObject::ReadAttribute(att);
+        return bres;
+    }
+
+    CSite* CTour::Setsite(CSite* psite)
+    {
+        CSite* site = psite;
+        if (site == NULL) {
+            site = CSite::Create();
+        }
+        SetObject((CObject*)site);
+
+        return site;
+    }
+
+    CSite* CTour::Getsite(int index)
+    {
+        return static_cast<CSite*>(GetObjectByID(ID_OPF_Site, index));
+    }
+
+}
