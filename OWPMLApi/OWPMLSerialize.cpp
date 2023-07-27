@@ -33,7 +33,7 @@ namespace OWPML {
     const LPCSTR COwpmlSerialize::s_olddistibutepassword = "\x22\0x59\0x61\0x6e\0x67\0x20\0x57\0x61\0x6e\0x67\0x53\0x75\0x6e\0x76\x21\x21\x22";
 
     COwpmlSerialize::COwpmlSerialize() : m_owpmlDoc(NULL), m_pVersion(NULL), m_pAppSetting(NULL),
-        m_pPackage(NULL), m_pHead(NULL), m_pHistory(NULL), m_pSection(NULL)
+        m_pPackage(NULL), m_pHead(NULL), m_pHistory(NULL), m_pSection(NULL), m_pRdf(NULL)
     {
         m_owpmlDoc = new OWPML::CDocument();
         m_pHistory = new std::vector<OWPML::CHWPMLHistoryType*>();
