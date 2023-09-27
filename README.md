@@ -20,11 +20,11 @@
     + 빌드가 완료되면 Build/Bin 디렉토리 아래 `Owpml.lib, OWPMLApi.lib, OWPMLUtil.lib, OWPMLTest.exe` 파일이 생성됩니다.
     + `Owpml.lib, OWPMLApi.lib, OWPMLUtil.lib` 파일을 이용해서 hwpx-owpml-model 프로젝트를 활용하는 다른 프로젝트에 해당 라이브러리를 추가하여 사용할 수 있습니다. 
 3. 빌드 완료 후 프로그램을 실행하려면, OWPMLTest프로젝트 속성 페이지에서 디버깅-명령 인수 탭에 **`원본파일 결과파일`** 을 이용해 실행 할 수 있습니다.
-   ![image](https://github.com/hancom-io/hwpx-owpml-model/assets/96164409/4f9937ad-4848-40b2-b855-3aa4d912b1aa)
+   ![image](https://github.com/hancom-io/hwpx-owpml-model/assets/96164409/f56da486-4001-4333-b754-8028933b839a)
 
 4. 커맨드 창에서 실행 할 경우, 명령프롬프트 창을 띄운 후 해당 결과물이 생성된 디렉토리로 이동, 아래 명령어를 입력하고 실행 결과를 얻을 수 있습니다.
 ```bash
-OWPMLTest.exe InputFile.owpml OutputFile.txt
+OWPMLTest.exe InputFile.hwpx OutputFile.txt
 ```
  
 ## Contribution
