@@ -164,6 +164,9 @@
   <ItemGroup>
     <ClCompile Include="OWPMLTest.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HwpxToText.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
