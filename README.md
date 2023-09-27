@@ -5,9 +5,9 @@
 ## Description
 1. hwpx-owpml-model은 OOXML형태로 구성된 owpml파일 필터의 모델입니다.
 2. 본 프로젝트는 한글 파일 필터중 하나인 owpml을 OOXML구조 기반으로 생성하고, 문서를 구성하는 각각의 엘리먼트들을 추출하고 저장할 수 있도록 되어있습니다.
-3. OWPML모델을 이용해서 문서의 텍스트 추출을 할 수 있는 예제코드가 첨부되어 있습니다.
-
-
+3. OWPML모델을 이용해서 문서의 텍스트 추출을 할 수 있는 예제코드가 첨부되어 있습니다.  
+   해당 샘플코드에는 첫번째 섹션에 대한 추출만 가능합니다.  
+   섹션 내 하위 엘리먼트들을 순환하며 텍스트가 있을 경우 추출하도록 작성되어 있습니다.   
 
 ## Running the tests
 - 빌드 환경
@@ -19,9 +19,8 @@
 2. `VisualStudio 실행 - 솔루션 구성 선택(Debug or Release) - 솔루션 플랫폼(x86) 선택 후 빌드 시작.`
     + 빌드가 완료되면 Build/Bin 디렉토리 아래 `Owpml.lib, OWPMLApi.lib, OWPMLUtil.lib, OWPMLTest.exe` 파일이 생성됩니다.
     + `Owpml.lib, OWPMLApi.lib, OWPMLUtil.lib` 파일을 이용해서 hwpx-owpml-model 프로젝트를 활용하는 다른 프로젝트에 해당 라이브러리를 추가하여 사용할 수 있습니다. 
-3. 빌드 완료 후 프로그램을 실행하려면, OWPMLTest프로젝트 속성 페이지에서 디버깅-명령 인수 탭에 **`원본파일 결과파일`** 을 이용해 실행 할 수 있습니다. 
-![image](https://user-images.githubusercontent.com/96164409/193709606-eb7de486-438f-40ed-9ea0-7f46a4898e31.png)
-
+3. 빌드 완료 후 프로그램을 실행하려면, OWPMLTest프로젝트 속성 페이지에서 디버깅-명령 인수 탭에 **`원본파일 결과파일`** 을 이용해 실행 할 수 있습니다.
+   ![image](https://github.com/hancom-io/hwpx-owpml-model/assets/96164409/4f9937ad-4848-40b2-b855-3aa4d912b1aa)
 
 4. 커맨드 창에서 실행 할 경우, 명령프롬프트 창을 띄운 후 해당 결과물이 생성된 디렉토리로 이동, 아래 명령어를 입력하고 실행 결과를 얻을 수 있습니다.
 ```bash
