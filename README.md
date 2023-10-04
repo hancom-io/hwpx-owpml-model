@@ -8,7 +8,9 @@
 3. OWPML모델을 이용해서 문서의 텍스트 추출을 할 수 있는 예제코드가 첨부되어 있습니다.  
    해당 샘플코드에는 첫번째 섹션에 대한 추출만 가능합니다.  
    섹션 내 하위 엘리먼트들을 순환하며 텍스트가 있을 경우 추출하도록 작성되어 있습니다.   
+4. OWPML 표준 문서의 상세 스펙은 [링크](https://www.hancom.com/etc/hwpDownload.do)를 참조하시면 됩니다.
 
+   
 ## Running the tests
 - 빌드 환경
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white)
