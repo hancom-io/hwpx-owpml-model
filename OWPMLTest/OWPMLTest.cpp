@@ -15,6 +15,10 @@
  */
 
 #include "HwpxToText.h"
+#include <string>
+#include <sstream>
+#include <codecvt>
+#include <locale>
 
 void PrintText(OWPML::CT* text, std::wstring& outtext)
 {
@@ -29,9 +33,7 @@ void PrintText(OWPML::CT* text, std::wstring& outtext)
         if (pObject->GetID() == ID_PARA_Char) {
             OWPML::CChar* pChar = (OWPML::CChar*)pObject;
             wprintf(L"%s", pChar->Getval());
-            wprintf(L"%s", L"\n");
             outtext.append(pChar->Getval());
-            outtext.append(L"\n");
         }
     }
 }
@@ -56,6 +58,11 @@ void ProcessingTextElement(OWPML::CObject* object, std::wstring& outtext)
                     PrintText((OWPML::CT*)pObject, outtext);
                     break;
                 }
+				case ID_PARA_LineSeg:
+				{
+					outtext += L"\n";
+					break;
+				}
                 default:
                     ProcessingTextElement(pObject, outtext);
                     break;
@@ -78,7 +85,7 @@ void GetSectionText(OWPML::COwpmlDocumnet* document, std::wstring& outtext)
 
 void HwpxToText(LPCWSTR srcPath, LPCWSTR targetPath)
 {
-    std::locale::global(std::locale("Korean"));
+	std::locale utf8Locale(std::locale(), new std::codecvt_utf8_utf16<wchar_t>);
     OWPML::COwpmlDocumnet* pdocument = OWPML::COwpmlDocumnet::OpenDocument(srcPath);
 
     if (pdocument == nullptr) {
@@ -88,16 +95,16 @@ void HwpxToText(LPCWSTR srcPath, LPCWSTR targetPath)
     std::wstring outtext;
     GetSectionText(pdocument, outtext);
 
-    std::wofstream f;
-    f.open(targetPath);
+	std::wofstream f;
+	f.imbue(utf8Locale);
+	f.open(targetPath, std::ios::trunc);
 
-    if (f.is_open()) {
-        f << outtext;
-        f.close();
-    }
+	if (f.is_open()) {
+		f << outtext;
+		f.close();
+	}
 
-    delete pdocument;
-
+	delete pdocument;
 }
 
 int wmain(int argc, wchar_t* argv[])
